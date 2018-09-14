@@ -1,0 +1,934 @@
+<html lang="">
+  <head>
+    <meta charSet="utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <title>
+      Low Poly Assets
+    </title>
+    <meta name="description" content="A pack of 75+ high quality, low poly assets with no restricting license attached. Use for what ever you want."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta property="og:image" content="assets/1uq6vrh4.png?w=1200&amp;h=630&amp;fit=crop"/>
+    <link rel="icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round|Roboto:400,500,700" rel="stylesheet"/>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-104678795-1">
+    </script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-104678795-1');
+    </script>
+  </head>
+  <body>
+    <div style="font-family:&#x27;Roboto&#x27;, Arial, serif;font-size:14px">
+      <div>
+        <header class="header" style="color:rgba(71,71,71,1);font-weight:400">
+          <div class="wr">
+            <a id="headerLogo" href="/" class="header__logo" style="font-weight:400">
+              Household Poly
+            </a>
+            <nav id="headerNav" class="header__nav">
+              <div class="header__navCtas">
+              </div>
+            </nav>
+            <nav id="headerMenu" class="header__nav header__nav--hidden">
+              <button id="headerMenuButton" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(230,113,113,1)">
+                Menu
+              </button>
+            </nav>
+            <nav id="headerDrawer" class="headerMenu">
+              <div id="headerDrawerBackdrop" class="headerMenu__backdrop">
+              </div>
+              <ul class="headerMenu__links">
+              </ul>
+              <button id="headerDrawerClose" class="headerMenu__close btn">
+                Close
+              </button>
+            </nav>
+          </div>
+          <script>
+            (function() {
+              var buffer = 10;
+              var margin = 60 + 40 + buffer;
+              // button
+              var button = document.getElementById('headerMenuButton');
+              var buttonWrapper = document.getElementById('headerMenu');
+              // drawer
+              var drawer = document.getElementById('headerDrawer');
+              var drawerBackdrop = document.getElementById('headerDrawerBackdrop');
+              var drawerClose = document.getElementById('headerDrawerClose');
+              // header UI
+              var logo = document.getElementById('headerLogo');
+              var nav = document.getElementById('headerNav');
+              var logoWidth = logo.offsetWidth;
+              var navWidth = nav.offsetWidth;
+            
+              var determineVisibility = function() {
+                var parent = window.innerWidth;
+                if (logoWidth + navWidth > parent - margin) {
+                  nav.classList.add('header__nav--hidden');
+                  buttonWrapper.classList.add('headerMenu--visible');
+                } else {
+                  nav.classList.remove('header__nav--hidden');
+                  buttonWrapper.classList.remove('headerMenu--visible');
+                }
+              };
+            
+              var showDrawer = function() {
+                drawer.classList.add('headerMenu--visible');
+              };
+            
+              var hideDrawer = function() {
+                drawer.classList.remove('headerMenu--visible');
+              };
+            
+              button.onclick = showDrawer;
+              drawerBackdrop.onclick = hideDrawer;
+              drawerClose.onclick = hideDrawer;
+            
+              window.addEventListener('resize', determineVisibility);
+              determineVisibility();
+            })();
+          </script>
+        </header>
+      </div>
+      <div>
+        <div class="section section--hero" style="background-image:url(assets/v963k4lh.png?w=1300&amp;h=800&amp;q=50&amp;fit=crop)">
+          <div class="wr heroWr heroWr--center">
+            <div class="heroWrapper heroWrapper--center" style="--margin-top-scale:0.8;--margin-bottom-scale:0.2">
+              <h1 class="hero__title" style="color:rgba(71,71,71,1);font-weight:400;font-family:&#x27;Varela Round&#x27;, Arial, serif">
+                75+ Item Pack of Unique Low-poly Assets
+              </h1>
+              <h2 class="hero__subtitle" style="color:rgba(71,71,71,1);font-weight:400">
+                Use for anything. 
+              </h2>
+              <div class="hero__ctas">
+                <form id="inlineForm_wgxoo5n7yzc" class="inlineForm inlineForm--c" data-siteid="cgzk625hdgtd">
+                  <input type="email" id="inlineFormEmail_wgxoo5n7yzc" class="inlineForm__input" placeholder="you@are.loved"/>
+                  <button id="inlineFormSubmit_wgxoo5n7yzc" class="btn btn--c btn--primary btn--large" style="color:#fff;background-color:rgba(230,113,113,1)">
+                    Subscribe
+                  </button>
+                </form>
+                <script>
+                  (function() {
+                    function bindInlineForm() {
+                      var form = document.getElementById('inlineForm_wgxoo5n7yzc');
+                      form.addEventListener('submit', handleInlineSubmit);
+                  
+                      var btn = document.getElementById('inlineFormSubmit_wgxoo5n7yzc');
+                      btn.addEventListener('click', handleInlineSubmit);
+                    }
+                  
+                    function handleInlineSubmit(e) {
+                      e.preventDefault();
+                      console.log('submitted form');
+                  
+                      var data = {
+                        siteId: document.getElementById('inlineForm_wgxoo5n7yzc').getAttribute('data-siteid'),
+                        listId: document.getElementById('inlineForm_wgxoo5n7yzc').getAttribute('data-listid'),
+                        email: document.getElementById('inlineFormEmail_wgxoo5n7yzc').value
+                      };
+                  
+                      if (!validateInlineData(data)) {
+                        return;
+                      }
+                  
+                      document.getElementById('inlineFormSubmit_wgxoo5n7yzc').classList.add('btn--loading');
+                  
+                      sendInlineData(data);
+                    }
+                  
+                    function sendInlineData(data) {
+                      var request = new XMLHttpRequest();
+                      request.open('POST', 'https://api.landen.co/public/subscribe', true);
+                      request.setRequestHeader(
+                        'Content-Type',
+                        'application/x-www-form-urlencoded; charset=UTF-8'
+                      );
+                      request.send(JSON.stringify(data));
+                  
+                      request.onload = function() {
+                        document
+                          .getElementById('inlineFormSubmit_wgxoo5n7yzc')
+                          .classList.remove('btn--loading');
+                        if (this.status >= 200 && this.status < 400) {
+                          // success handling
+                          clearInlineData();
+                          document
+                            .getElementById('inlineFormSubmit_wgxoo5n7yzc')
+                            .classList.add('btn--success');
+                          setTimeout(function() {
+                            document
+                              .getElementById('inlineFormSubmit_wgxoo5n7yzc')
+                              .classList.remove('btn--success');
+                          }, 2000);
+                        } else {
+                          console.log('error');
+                        }
+                      };
+                  
+                      request.onerror = function() {
+                        alert(
+                          'A network error occured. Please make sure you are connected to the internet.'
+                        );
+                      };
+                    }
+                  
+                    function clearInlineData() {
+                      document.getElementById('inlineFormEmail_wgxoo5n7yzc').value = '';
+                    }
+                  
+                    function validateInlineData(data) {
+                      var error = false;
+                      if (data.email.length < 6) {
+                        error = true;
+                      }
+                  
+                      if (error) {
+                        document.getElementById('inlineFormEmail_wgxoo5n7yzc').classList.add('error');
+                      } else {
+                        document.getElementById('inlineFormEmail_wgxoo5n7yzc').classList.remove('error');
+                      }
+                  
+                      return error === false;
+                    }
+                    bindInlineForm();
+                  })();
+                </script>
+              </div>
+              <div class="hero__ctaInfo" style="color:rgba(71,71,71,1);font-weight:400">
+                Sign up for updates and get a freebee asset emailed to you!
+              </div>
+            </div>
+            <div>
+            </div>
+          </div>
+          <div class="divider">
+            <svg viewBox="0 0 1695 57" preserveAspectRatio="none">
+              <path d="M0 23c135.4 19 289.6 28.5 462.5 28.5C721.9 51.5 936.7 1 1212.2 1 1395.8.9 1556.7 8.3 1695 23v34H0V23z" fill="rgba(252,252,252,1)" fill-rule="evenodd">
+              </path>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="section" style="background-color:rgba(252,252,252,1)">
+          <div class="wr">
+            <div class="grid grid--center">
+              <div class="gridItem">
+                <div class="icon icon--xlarge" style="height:70px;width:70px;background-image:url(assets/51lqofop.svg?w=70)">
+                </div>
+                <h3 class="gridItem__title" style="color:rgba(71,71,71,1);font-weight:500">
+                  Common and household items
+                </h3>
+                <p class="gridItem__description" style="color:rgba(71,71,71,1);font-weight:400">
+                  Some of the most commonly searched for 3d models. Made just for you
+                </p>
+              </div>
+              <div class="gridItem">
+                <div class="icon icon--xlarge" style="height:70px;width:70px;background-image:url(assets/d8gjd2gi.svg?w=70)">
+                </div>
+                <h3 class="gridItem__title" style="color:rgba(71,71,71,1);font-weight:500">
+                  All assets are low poly by design
+                </h3>
+                <p class="gridItem__description" style="color:rgba(71,71,71,1);font-weight:400">
+                  We have that super cool kid vibe you are looking for.
+                </p>
+              </div>
+              <div class="gridItem">
+                <div class="icon icon--xlarge" style="height:70px;width:70px;background-image:url(assets/j3vkngje.svg?w=70)">
+                </div>
+                <h3 class="gridItem__title" style="color:rgba(71,71,71,1);font-weight:500">
+                  78 hand made objects
+                </h3>
+                <p class="gridItem__description" style="color:rgba(71,71,71,1);font-weight:400">
+                  Every object is uniquely made just for this pack.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="section" style="background-color:rgba(239,239,239,1)">
+          <div class="wr">
+            <h2 class="section__title center standalone" style="color:rgba(71,71,71,1);font-weight:400;font-family:&#x27;Varela Round&#x27;, Arial, serif">
+              VR Preview
+            </h2>
+            <div class="textBody mkd textBody--left">
+              <div style="text-align:center">
+                <iframe src="https://household-poly.glitch.me/" style="border:1px #000000 solid;" name="aframe" scrolling="no" frameborder="1" marginheight="0px" marginwidth="5px" height="600px" width="800px" allowfullscreen>
+                </iframe>
+                <br>
+                Use WASD keys & mouse to move.
+              </div>
+              <br>
+              <hr>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="section" style="background-color:rgba(239,239,239,1)">
+          <div class="wr">
+            <h2 class="section__title center standalone" style="color:rgba(71,71,71,1);font-weight:400;font-family:&#x27;Varela Round&#x27;, Arial, serif">
+              Image Previews
+            </h2>
+            <div class="textBody mkd textBody--left">
+              <img src="https://i.imgur.com/9NCzhbF.png" alt=" " width="250" height="250">
+              <img src="https://i.imgur.com/2iciulP.png" alt="broken" width="250">
+              <img src="https://i.imgur.com/kUvfNXg.png" alt="broken" width="250">
+              <img src="https://i.imgur.com/RZ893vZ.png" alt="broken" width="250">
+              <img src="https://i.imgur.com/Ze1TZKd.png" alt="broken" width="250">
+              <img src="https://i.imgur.com/LUc2Ixk.png" alt="broken" width="250">
+              <img src="https://i.imgur.com/4Mqeshw.png" alt="broken" width="250">
+              <img src="https://i.imgur.com/s4G7tjN.png" alt="broken" width="250">
+              <img src="https://i.imgur.com/oVYQZEY.png" alt="broken" width="250">
+              <img src="https://i.imgur.com/x3udHgA.png" alt="broken" width="250">
+              <img src="https://i.imgur.com/wiff4UB.png" alt="broken" width="250">
+              <img width="250" alt="apple" src="https://i.imgur.com/RMboolN.png">
+              <img src="https://i.imgur.com/PJWfke2.png" alt="controller" width="250">
+              <img src="https://i.imgur.com/cUg4lRO.png" alt=" " width="250">
+              <img src="https://i.imgur.com/dSFKJw5.png" alt=" " width="250">
+              <img src="https://i.imgur.com/uxZaezN.png" alt=" " width="250">
+              <img src="https://i.imgur.com/0sFgLwW.png" alt=" " width="250">
+              <img src="https://i.imgur.com/AyqjzYZ.png" alt=" " width="250">
+              <img src="https://i.imgur.com/fZoLIzA.png" alt=" " width="250">
+              <img src="https://i.imgur.com/6kzC7yE.png" alt=" " width="250">
+              <img src="https://i.imgur.com/8y3yh0D.png" alt=" " width="250">
+              <img src="https://i.imgur.com/EppnH2Q.png" alt=" " width="250">
+              <img src="https://i.imgur.com/WI4Khcc.png" alt=" " width="250">
+              <img src="https://i.imgur.com/n69WglA.png" alt=" " width="250">
+              <img src="https://i.imgur.com/tislKr5.png" alt=" " width="250">
+              <img src="https://i.imgur.com/fr4AiXL.png" alt="x" width="250">
+              <img src="https://i.imgur.com/7Qp4iks.png" alt="x" width="250">
+              <img src="https://i.imgur.com/72UiyGU.png" alt="x" width="250">
+              <img src="https://i.imgur.com/4wW4Hjx.png" alt="x" width="250">
+              <img src="https://i.imgur.com/9wlm0Kq.png" alt="x" width="250">
+              <h3 id="many-more-">
+                Many more...
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="section" style="background-color:rgba(252,252,252,1)">
+          <div class="wr">
+            <h2 class="section__title center standalone" style="color:rgba(71,71,71,1);font-weight:400;font-family:&#x27;Varela Round&#x27;, Arial, serif">
+              Pay once. Use forever, for anything.
+            </h2>
+            <div class="pricing">
+              <div class="pricingTiers">
+                <div class="pricingTierWrapper">
+                  <div class="pricingTier">
+                    <h3 class="pricingTier__title" style="color:rgba(71,71,71,1);font-weight:500">
+                      Household Poly Pack
+                    </h3>
+                    <p class="pricingTier__description" style="color:rgba(71,71,71,1);font-weight:400">
+                      75+ Low poly common items
+                    </p>
+                    <div class="pricingTier__price">
+                      <span class="price" style="color:rgba(71,71,71,1);font-weight:400">
+                        $12
+                      </span>
+                    </div>
+                    <ul class="pricingTier__features">
+                      <li style="color:rgba(71,71,71,1);font-weight:400">
+                        <svg width="21px" height="17px" viewBox="0 0 21 17" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="ui-icons" transform="translate(-109.000000, -67.000000)" fill="#22BC66">
+                              <polygon id="check" points="108.994099 76.4000626 115.987848 83.419577 129.407253 69.9978283 126.587674 67.1592372 115.987848 77.7490936 111.827057 73.5894775">
+                              </polygon>
+                            </g>
+                          </g>
+                        </svg>
+                         All of our assets
+                      </li>
+                      <li style="color:rgba(71,71,71,1);font-weight:400">
+                        <svg width="21px" height="17px" viewBox="0 0 21 17" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="ui-icons" transform="translate(-109.000000, -67.000000)" fill="#22BC66">
+                              <polygon id="check" points="108.994099 76.4000626 115.987848 83.419577 129.407253 69.9978283 126.587674 67.1592372 115.987848 77.7490936 111.827057 73.5894775">
+                              </polygon>
+                            </g>
+                          </g>
+                        </svg>
+                         When we add more things you get those too
+                      </li>
+                      <li style="color:rgba(71,71,71,1);font-weight:400">
+                        <svg width="21px" height="17px" viewBox="0 0 21 17" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="ui-icons" transform="translate(-109.000000, -67.000000)" fill="#22BC66">
+                              <polygon id="check" points="108.994099 76.4000626 115.987848 83.419577 129.407253 69.9978283 126.587674 67.1592372 115.987848 77.7490936 111.827057 73.5894775">
+                              </polygon>
+                            </g>
+                          </g>
+                        </svg>
+                         Use commercially or for any purpose
+                      </li>
+                    </ul>
+                    <a href="/buy" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(230,113,113,1)">
+                      Buy
+                    </a>
+                  </div>
+                </div>
+                <div class="pricingTierWrapper">
+                  <div class="pricingTier">
+                    <h3 class="pricingTier__title" style="color:rgba(71,71,71,1);font-weight:500">
+                      Something Else
+                    </h3>
+                    <p class="pricingTier__description" style="color:rgba(71,71,71,1);font-weight:400">
+                      Some models just for you
+                    </p>
+                    <div class="pricingTier__price">
+                      <span class="price" style="color:rgba(71,71,71,1);font-weight:400">
+                        Contact Us
+                      </span>
+                    </div>
+                    <ul class="pricingTier__features">
+                      <li style="color:rgba(71,71,71,1);font-weight:400">
+                        <svg width="21px" height="17px" viewBox="0 0 21 17" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="ui-icons" transform="translate(-109.000000, -67.000000)" fill="#22BC66">
+                              <polygon id="check" points="108.994099 76.4000626 115.987848 83.419577 129.407253 69.9978283 126.587674 67.1592372 115.987848 77.7490936 111.827057 73.5894775">
+                              </polygon>
+                            </g>
+                          </g>
+                        </svg>
+                         We can help you with something specific. Let us know.
+                      </li>
+                    </ul>
+                    <a href="mailto:joseph@fourthwavestudios.com" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(230,113,113,1)">
+                      Contact us
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="section" style="background-color:rgba(239,239,239,1)">
+          <div class="wr">
+            <h2 class="section__title center standalone" style="color:rgba(71,71,71,1);font-weight:400;font-family:&#x27;Varela Round&#x27;, Arial, serif">
+              FAQ
+            </h2>
+            <div class="faq">
+              <div class="faqItem">
+                <h3 class="faqItem__question" style="color:rgba(71,71,71,1);font-weight:700">
+                  Can you make me a custom asset?
+                </h3>
+                <p class="faqItem__answer" style="color:rgba(71,71,71,1);font-weight:400">
+                  Yes! Contact us and we&#x27;ll see what we can do.
+                </p>
+              </div>
+              <div class="faqItem">
+                <h3 class="faqItem__question" style="color:rgba(71,71,71,1);font-weight:700">
+                  Can I sell these models? 
+                </h3>
+                <p class="faqItem__answer" style="color:rgba(71,71,71,1);font-weight:400">
+                  You can use them as a part of any commercial project. Please don&#x27;t sell them as is, that&#x27;s not very nice. 
+                </p>
+              </div>
+              <div class="faqItem">
+                <h3 class="faqItem__question" style="color:rgba(71,71,71,1);font-weight:700">
+                  Will you add more models soon?
+                </h3>
+                <p class="faqItem__answer" style="color:rgba(71,71,71,1);font-weight:400">
+                  Yes, we are planning on making this pack have 100 models total. 
+                </p>
+              </div>
+              <div class="faqItem">
+                <h3 class="faqItem__question" style="color:rgba(71,71,71,1);font-weight:700">
+                  What&#x27;s the &quot;freebee&quot; for signing up for updates?
+                </h3>
+                <p class="faqItem__answer" style="color:rgba(71,71,71,1);font-weight:400">
+                  We&#x27;ll send you a random low poly object from our pack that we think is cool. We won&#x27;t sell your email.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="section" style="background-color:rgba(239,239,239,1)">
+          <div class="wr">
+            <h2 class="section__title center standalone" style="color:rgba(71,71,71,1);font-weight:400;font-family:&#x27;Varela Round&#x27;, Arial, serif">
+              Full Asset List
+            </h2>
+            <div class="textBody mkd textBody--left">
+              <table>
+                <thead>
+                  <tr>
+                    <th>
+                      Included
+                    </th>
+                    <th>
+                      Included
+                    </th>
+                    <th>
+                      Included
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      apple
+                    </td>
+                    <td>
+                      nunchucks
+                    </td>
+                    <td>
+                      toilet paper
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      orange
+                    </td>
+                    <td>
+                      ice cream scoop
+                    </td>
+                    <td>
+                      hammer
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      tooth brush
+                    </td>
+                    <td>
+                      pasta pot
+                    </td>
+                    <td>
+                      wrench (new one coming soon)
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      tooth paste
+                    </td>
+                    <td>
+                      pan
+                    </td>
+                    <td>
+                      recycle bin
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      trophy
+                    </td>
+                    <td>
+                      banana
+                    </td>
+                    <td>
+                      bowl
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      saw
+                    </td>
+                    <td>
+                      banana bunch
+                    </td>
+                    <td>
+                      plate
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      baseball bat
+                    </td>
+                    <td>
+                      plunger
+                    </td>
+                    <td>
+                      candles (4 types)
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      wall painting
+                    </td>
+                    <td>
+                      gaming console
+                    </td>
+                    <td>
+                      fork
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      TV
+                    </td>
+                    <td>
+                      video game controller
+                    </td>
+                    <td>
+                      spray bottle (2)
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      cabbage
+                    </td>
+                    <td>
+                      lamp
+                    </td>
+                    <td>
+                      coffee pot
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      salt shaker
+                    </td>
+                    <td>
+                      light bulb
+                    </td>
+                    <td>
+                      book shelf
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      pepper shaker
+                    </td>
+                    <td>
+                      broom
+                    </td>
+                    <td>
+                      book
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      wine glass
+                    </td>
+                    <td>
+                      screwdrivers (2 types)
+                    </td>
+                    <td>
+                      hosta indoor plant
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      desk fan
+                    </td>
+                    <td>
+                      wood spoon
+                    </td>
+                    <td>
+                      remote control
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      AA baterries
+                    </td>
+                    <td>
+                      bubble level
+                    </td>
+                    <td>
+                      backpack     
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      ants
+                    </td>
+                    <td>
+                      mug
+                    </td>
+                    <td>
+                      pot planter
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      baseball cap
+                    </td>
+                    <td>
+                      6 pack
+                    </td>
+                    <td>
+                      bottle of beer
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      soda can
+                    </td>
+                    <td>
+                      spatula
+                    </td>
+                    <td>
+                      smart phone
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Lava lamp
+                    </td>
+                    <td>
+                      golf club
+                    </td>
+                    <td>
+                      Oculus Sensor
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      walkie talkie
+                    </td>
+                    <td>
+                      thumb drive
+                    </td>
+                    <td>
+                      golf T (with &amp; without ball)
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      monitor
+                    </td>
+                    <td>
+                      key
+                    </td>
+                    <td>
+                      coins (2 types)
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      phone
+                    </td>
+                    <td>
+                      paint brush
+                    </td>
+                    <td>
+                      little brushes
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      binoculars
+                    </td>
+                    <td>
+                      hour glass
+                    </td>
+                    <td>
+                      shoes
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      wine opener
+                    </td>
+                    <td>
+                      head phones
+                    </td>
+                    <td>
+                      hatchet
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      grapes
+                    </td>
+                    <td>
+                      champagne glass
+                    </td>
+                    <td>
+                      cane
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      shovel
+                    </td>
+                    <td>
+                      walker
+                    </td>
+                    <td>
+                      <em>
+                        random others thrown in
+                      </em>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="section" style="background-color:rgba(252,252,252,1)">
+          <div class="wr">
+            <h2 class="section__title center" style="color:rgba(71,71,71,1);font-weight:400;font-family:&#x27;Varela Round&#x27;, Arial, serif">
+              Contact us
+            </h2>
+            <h3 class="section__subtitle center" style="color:rgba(71,71,71,1);font-weight:400">
+              Got any questions? Don&#x27;t hesitate to reach out.
+            </h3>
+            <form class="contact" id="contact" data-siteid="cgzk625hdgtd">
+              <div class="contact__item">
+                <label style="color:rgba(71,71,71,1);font-weight:500">
+                  Full Name
+                </label>
+                <input type="text" id="contactName" placeholder="Jane Doe" style="color:rgba(71,71,71,1);font-weight:400"/>
+              </div>
+              <div class="contact__row">
+                <div class="contact__item">
+                  <label style="color:rgba(71,71,71,1);font-weight:500">
+                    Email Address
+                  </label>
+                  <input type="email" id="contactEmail" placeholder="jane.doe@mail.com" style="color:rgba(71,71,71,1);font-weight:400"/>
+                </div>
+                <div class="contact__item">
+                  <label style="color:rgba(71,71,71,1);font-weight:500">
+                    Phone (Optional)
+                  </label>
+                  <input type="text" id="contactPhone" placeholder="(123) 456-7890" style="color:rgba(71,71,71,1);font-weight:400"/>
+                </div>
+              </div>
+              <div class="contact__item">
+                <label style="color:rgba(71,71,71,1);font-weight:500">
+                  Your Message
+                </label>
+                <textarea id="contactMessage" style="color:rgba(71,71,71,1);font-weight:400">
+                </textarea>
+              </div>
+              <div id="contactError" class="contact__error">
+              </div>
+              <button id="contactSubmit" class="btn btn--c btn--primary btn--large" style="color:#fff;background-color:rgba(230,113,113,1)">
+                Send Message
+              </button>
+            </form>
+            <script>
+              (function() {
+                function bindForm() {
+                  var form = document.getElementById('contact');
+                  form.addEventListener('submit', handleSubmit);
+              
+                  var btn = document.getElementById('contactSubmit');
+                  btn.addEventListener('click', handleSubmit);
+                }
+              
+                function handleSubmit(e) {
+                  e.preventDefault();
+                  console.log('submitted form');
+              
+                  var data = {
+                    path: window.location.pathname,
+                    siteId: document.getElementById('contact').getAttribute('data-siteid'),
+                    name: document.getElementById('contactName').value,
+                    email: document.getElementById('contactEmail').value,
+                    phone: document.getElementById('contactPhone').value,
+                    message: document.getElementById('contactMessage').value
+                  };
+              
+                  if (!validateData(data)) {
+                    return;
+                  }
+              
+                  document.getElementById('contactSubmit').classList.add('btn--loading');
+              
+                  sendData(data);
+                }
+              
+                function sendData(data) {
+                  var request = new XMLHttpRequest();
+                  request.open('POST', 'https://api.landen.co/public/contact', true);
+                  request.setRequestHeader(
+                    'Content-Type',
+                    'application/x-www-form-urlencoded; charset=UTF-8'
+                  );
+                  request.send(JSON.stringify(data));
+              
+                  request.onload = function() {
+                    document.getElementById('contactSubmit').classList.remove('btn--loading');
+                    if (this.status >= 200 && this.status < 400) {
+                      // success handling
+                      clearData();
+                      document.getElementById('contactSubmit').classList.add('btn--success');
+                      setTimeout(function() {
+                        document
+                          .getElementById('contactSubmit')
+                          .classList.remove('btn--success');
+                      }, 2000);
+                    } else {
+                      console.log('error');
+                    }
+                  };
+              
+                  request.onerror = function() {
+                    document.getElementById('contactError').innerText =
+                      'A network error occured. Please make sure you are connected to the internet.';
+                  };
+                }
+              
+                function clearData() {
+                  document.getElementById('contactName').value = '';
+                  document.getElementById('contactEmail').value = '';
+                  document.getElementById('contactPhone').value = '';
+                  document.getElementById('contactMessage').value = '';
+                }
+              
+                function validateData(data) {
+                  var error = false;
+                  if (data.name.length < 2) {
+                    error = 'Please enter your name';
+                  } else if (data.email.length < 6) {
+                    error = 'Please enter your email address';
+                  } else if (data.message.length < 4) {
+                    error = 'Please enter a message';
+                  }
+              
+                  if (error) {
+                    document.getElementById('contactError').innerText = error;
+                  } else {
+                    document.getElementById('contactError').innerText = '';
+                  }
+              
+                  return error === false;
+                }
+                bindForm();
+              })();
+            </script>
+          </div>
+        </div>
+      </div>
+      <div>
+        <footer class="section section--footer" style="background-color:rgba(255,191,84,1)">
+          <div class="wr">
+            <div class="footer" style="color:rgba(71,71,71,1);font-weight:400">
+              <div class="footer__primary">
+                <span>
+                  © 2019 Fourth Wave LLC  - Made with ❤️
+                </span>
+              </div>
+              <ul class="footer__social">
+                <li>
+                  <a href="http://twitter.com/cupojoseph" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                      <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" fill="rgba(71,71,71,1)">
+                      </path>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
